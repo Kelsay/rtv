@@ -29,6 +29,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
+    "bootstrap-css-only": "^3.3.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "reset-css": "^2.2.0"

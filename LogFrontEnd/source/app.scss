@@ -1,3 +1,30 @@
+@import "../node_modules/bootstrap-css-only/css/bootstrap.css";
+
+// Reset
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+// Main styles
+
+body {
+  background: #eee;
+}
+
+.container.main-container {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.3) 0 0 4px;
+  margin-top: 20px;
+  padding: 20px;
 }

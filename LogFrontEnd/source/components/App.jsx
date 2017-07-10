@@ -3,15 +3,17 @@
  */
 
 import React from 'react';
+import LogReader from "./LogReader/LogReader.jsx";
 
 
 export default class App extends React.Component {
 
     render() {
         return (
-            <main>
-                <h1>Log Viewer</h1>
-            </main>
+            <div className="container main-container">
+                <h1>Log Reader</h1>
+                <LogReader/>
+            </div>
         );
     }
 
