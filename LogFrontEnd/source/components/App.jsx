@@ -3,10 +3,19 @@
  */
 
 import React from 'react';
+import {createStore} from 'redux';
+import DefaultState from './Main/DefaultState.jsx';
+import mainReducer from './Main/mainReducer.jsx';
+
 import LogReader from "./LogReader/LogReader.jsx";
 
 
 export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        createStore(mainReducer, DefaultState);
+    }
 
     render() {
         return (

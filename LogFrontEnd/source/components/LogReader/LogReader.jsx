@@ -1,16 +1,8 @@
 import React from 'react';
 import LogEntriesList from './LogEntriesList.jsx';
-import ActionTypes from '../Shared/ActionTypes.jsx';
+import ActionTypes from '../Main/ActionTypes.jsx';
 
 export default class LogReader extends React.Component {
-
-
-    getInitialState() {
-        return {
-
-        };
-    }
-
 
     render() {
         return (
@@ -20,4 +12,9 @@ export default class LogReader extends React.Component {
         );
     }
 
+    onSortingChanged(a, b) {
+        console.log('sorting changed');
+    }
 }
+
+
