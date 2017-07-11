@@ -1,13 +1,22 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import LogEntriesList from './LogEntriesList.jsx';
+import LogFilter from './LogFilter.jsx';
 import ActionTypes from '../Main/ActionTypes.jsx';
 
-export default class LogReader extends React.Component {
+class LogReader extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
             <div>
                 Reader
+                <LogFilter/>
+                <LogEntriesList/>
+                {this.props.filter}
             </div>
         );
     }
@@ -16,5 +25,17 @@ export default class LogReader extends React.Component {
         console.log('sorting changed');
     }
 }
+
+const mapStateToProps = (state) => {
+        return {
+            filter: state.filter
+        };
+    },
+    mapDispatchToProps = (dispatch) => {
+        return {};
+    };
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogReader);
+
 
 
