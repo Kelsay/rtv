@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -24,7 +24,40 @@ body {
 .container.main-container {
   background: #fff;
   border-radius: 4px;
-  box-shadow: rgba(0,0,0,0.3) 0 0 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px;
   margin-top: 20px;
   padding: 20px;
+}
+
+// This could be moved to separated module file
+.log-reader {
+
+  .log-sorting {
+    .btn {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .log-items {
+    padding-top: 0;
+  }
+
+  .log-items-header {
+    background: #eee;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    font-weight: 700;
+  }
+
+  .list-group-item {
+    border-width: 1px 0 0 0;
+    border-radius: 0;
+    &:hover {
+      background: #eee;
+    }
+  }
+
+  div {
+    word-break: break-all;
+  }
 }

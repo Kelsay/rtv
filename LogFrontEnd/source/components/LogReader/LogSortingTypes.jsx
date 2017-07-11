@@ -1,5 +1,6 @@
 export default {
-    SORTING_IP: "IP",
-    SORTING_RESPONSE: "Response",
-    SORTING_REQUEST: "Request"
+    SORTING_DEFAULT: "",
+    SORTING_IP: "ip",
+    SORTING_RESPONSE: "response",
+    SORTING_REQUEST: "request"
 };

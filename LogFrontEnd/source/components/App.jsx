@@ -8,7 +8,7 @@ import {Provider} from 'react-redux';
 import DefaultState from './Main/DefaultState.jsx';
 import mainReducer from './Main/mainReducer.jsx';
 
-import LogReader from "./LogReader/LogReader.jsx";
+import LogReader from "./LogReader/Log.jsx";
 
 
 export default class App extends React.Component {
@@ -23,7 +23,7 @@ export default class App extends React.Component {
             <div className="container main-container">
                 <Provider store={this.store}>
                     <div>
-                        <h1>Log Reader</h1>
+                        <h1>Log Entries</h1>
                         <LogReader/>
                     </div>
                 </Provider>

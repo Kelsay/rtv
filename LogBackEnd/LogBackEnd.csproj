@@ -96,6 +96,7 @@
     <Compile Include="App\Base\BaseController.cs" />
     <Compile Include="App\Log\LogController.cs" />
     <Compile Include="App\Log\LogReader.cs" />
+    <Compile Include="App\Log\LogSortingTypes.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="App\Log\LogEntryModel.cs" />
     <Compile Include="Global.asax.cs">

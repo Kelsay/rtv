@@ -3,7 +3,6 @@
  */
 
 export default {
-    items: [1, 2, 3],
-    filter: '',
-    sorting: ''
+    sorting: '',
+    loading: false
 };
