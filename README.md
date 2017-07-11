@@ -13,10 +13,28 @@ Devel: navigate to the project and use 'npm start' to run WebpackDevServer
 
 
 ## Steps
-Analyse the provided log file and create a LogEntryModel class based on the file data
-Use Swagger to design an endpoint that will return the data - collection of log entries
-Implement LogFileReader to read the data
-Implement API Endpoint to serve the data
+Analysed the provided log file and create a LogEntryModel class based on the file data
+Used Swagger to design an endpoint that will return the data - collection of log entries
+Implemented LogFileReader to read the data
+Implemented API Endpoint to serve the data
 
-The most challenging parte here was the structure of the file. It looks like it is separated by spaces, but there are also special cases with fields containing spaces, enclosed in "" or []
-I've chosen to break them down using regular expressions.
+The most challenging part here was the structure of the file. It looks like it is separated by spaces, but there are also special cases with fields containing spaces, enclosed in "" or []
+I've chosen to break them down using regular expressions, implemented this method using , but it was not working correctly for the case of strings enclosed in double quotes containing parens [].
+Therefore I had to implement more thorough and manual method.
+
+I have skipped pagination as it was not within the scope of the task.
+
+
+For the Front End I have implemented a simple JavaScript app.
+
+I have used:
+
+- Node and npm
+- React, Redux and a React-Redux bridge
+- Webpack with WebpackDevServer for packaging
+- Babel for translating ES6 and JSX files
+- Eslint for enforcing strict checking for better code quality
+- Sass for the styles
+- Bootstrap for quickly adding styles
+
+
