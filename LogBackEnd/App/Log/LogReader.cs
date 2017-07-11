@@ -50,21 +50,14 @@ namespace LogBackEnd.App.Log
             LogEntryModel entry = new LogEntryModel()
             {
                 IP = parts[0],
-                Date = Trim(parts[3]),
-                Request = Trim(parts[4]),
+                Date = parts[3],
+                Request = parts[4],
                 Response = parts[5],
                 Size = parts[6],
-                Referer = Trim(parts[7]),
-                UserAgent = Trim(parts[8]),
-                
+                Referer = parts[7],
+                UserAgent = parts[8]   
             };
             return entry;
-        }
-
-        protected string Trim(string text)
-        {
-            char[] chars = { '"', '[', ']' };
-            return text.Trim(chars);
         }
 
         /// <summary>

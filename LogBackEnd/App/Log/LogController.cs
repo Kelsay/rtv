@@ -24,11 +24,11 @@ namespace LogBackEnd.App.Log
         private List<LogEntryModel> SortItems(List<LogEntryModel> list, string sorting)
         {
             switch (sorting) {
-                case "ip":
+                case LogSortingTypes.SORTING_IP:
                     return list.OrderBy(x => x.IP).ToList<LogEntryModel>();
-                case "request":
+                case LogSortingTypes.SORTING_REQUEST:
                     return list.OrderBy(x => x.Request).ToList<LogEntryModel>();
-                case "response":
+                case LogSortingTypes.SORTING_RESPONSE:
                     return list.OrderBy(x => x.Response).ToList<LogEntryModel>();
                 default:
                     return list;
